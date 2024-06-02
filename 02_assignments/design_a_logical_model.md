@@ -16,6 +16,7 @@ _Hint, search type 1 vs type 2 slowly changing dimensions._
 Bonus: Are there privacy implications to this, why or why not?
 ```
 Your answer...
+Yes, nowadays, regulatory requirements (e.g. Personal Information Protection and Electronic Documents Act) may necessitate that customers be informed of the purpose of any collected personal information. While it would be relatively straightforward to provide the reason for storing the current address, e.g. for book delivery or customer survey, it may be more difficult to justify storing the previous address. Some related (but weaker) jusifications may include tracing back previous delivery orders or analyzing customer movements. Compared with SCD1, SCD2 may require additional measures for restricting data access authorization and enhancing data encryption.
 ```
 
 ## Question 4
@@ -24,6 +25,7 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
 Your answer...
+The AdventureWorks Schema has more tables (particularly, dimension/reference tables) to provide details (e.g. on product categories, product models, address types), and organize tables by schema. It also uses more unique identifiers in addition to primary and foreign keys. I think these are mostly useful when we have a large number of parameters/variables. As the table grows, it may be a good idea to begin adapting these structures, by adding in more tables, grouping them by schema, and using more unique identifiers, so that information is more organized, which in turn can help ensure that data are accurate, complete and retrievable.
 ```
 
 # Criteria
